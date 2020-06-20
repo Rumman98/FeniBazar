@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Rumman\.gradle\caches\transforms-1\files-1.1\Android-SpinKit-1.4.0.aar\2592a580b1af79f8b03842945342f938\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="20"
+        optimize="true"
+        revision="26.0.2"
+        sha1="0f30f64226f855dc3bfac8908e04a445375643ec">
+        <dex dex="C:\Users\Rumman\FeniBazar\app\build\intermediates\transforms\preDex\release\16.jar" />
+    </item>
+
+</items>
