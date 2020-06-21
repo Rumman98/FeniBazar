@@ -8,6 +8,5 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
     <style name="splash" parent="Theme.AppCompat.DayNight.NoActionBar"/>
-    <style>img{display: inline; height: auto; max-width: 100%;}</style>
 
 </resources>

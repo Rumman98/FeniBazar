@@ -2,8 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     android:orientation="vertical"
     tools:context="www.fenibazar.com.firstpage"
     >
@@ -18,8 +18,8 @@
 
         <WebView
             android:id="@+id/webview"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
          />
 
 </android.support.v4.widget.SwipeRefreshLayout>
@@ -34,13 +34,15 @@
         style="@style/SpinKitView.Small.DoubleBounce"
         app:SpinKit_Color="@color/colorPrimaryDark"
 
+
         />
 
  <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         android:id="@+id/Relative"
-        android:background="#ffff">
+        android:background="#ffff"
+     android:visibility="gone">
 
 
         <ImageView

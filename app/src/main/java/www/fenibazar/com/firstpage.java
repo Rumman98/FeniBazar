@@ -92,6 +92,7 @@ public class firstpage extends AppCompatActivity {
             wv.getSettings().setDisplayZoomControls(false);
             wv.getSettings().setRenderPriority(WebSettings.RenderPriority.HIGH);
             wv.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
+            wv.getSettings().setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
             wv.getSettings().setAppCacheEnabled(true);
             wv.getSettings().setMediaPlaybackRequiresUserGesture(true);
             wv.getSettings().setLoadWithOverviewMode(true);
@@ -101,6 +102,15 @@ public class firstpage extends AppCompatActivity {
             webSettings.setSavePassword(true);
             webSettings.setSaveFormData(true);
             webSettings.setEnableSmoothTransition(true);
+
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+                // chromium, enable hardware acceleration
+                wv.setLayerType(View.LAYER_TYPE_HARDWARE, null);
+            } else {
+                // older android version, disable hardware acceleration
+                wv.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
+            }
+
 
 
 
